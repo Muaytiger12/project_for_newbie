@@ -1,9 +1,7 @@
 import { Component, Input, inject } from "@angular/core";
 import { UserApiServiceService } from "../../services/user-api-service.service";
-// import { User, UserServiceService } from "../../services/user-service.service";
 import { MatDialog } from "@angular/material/dialog";
 import { CreateEditUserComponent } from "../create-edit-user/create-edit-user.component";
-// import { UserLocalStorageService } from "../../services/user-local-storage-service";
 import { Store } from "@ngrx/store";
 import { selectUsers } from "../../store/users.selectors";
 import { addUsers, deleteUsers, loadUsers } from "../../store/users.actions";
