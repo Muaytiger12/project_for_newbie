@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-content class="mat-content">
+    <div class="container">
+      <div> {{ user.name }} </div>
+      <div> {{ user.email }} </div>
+      <div> {{ user.phone }} </div>
+      <div> {{ user.website }} </div>
+
+      <button mat-raised-button color="beige" (click)="onDelete(user.id)">
+        Удалить
+      </button>
+      <button mat-raised-button (click)="updateModal()">Редактировать</button>
+    </div>
+  </mat-card-content>
+</mat-card>

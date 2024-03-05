@@ -1,0 +1,11 @@
+.form {
+display: flex;
+flex-direction: column;
+}
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+}
+.dialog-actions {
+    padding-left:25px ;
+}

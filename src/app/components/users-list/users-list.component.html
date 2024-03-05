@@ -1,0 +1,13 @@
+<mat-dialog-actions class="dialog-actions">
+  <button mat-raised-button color="primary" (click)="openModal()">
+    Добавить пользователя
+  </button>
+</mat-dialog-actions>
+
+<div class="list">
+  <app-user-card
+    *ngFor="let user of users$ | async"
+    [user]="user"
+    (deleteUser)="onDeleteUser($event)"
+  ></app-user-card>
+</div>
